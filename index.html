@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+    >
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>React Native</title>
+</head>
+<body class="bg-dark">
+
+    <div class="container">
+        <div class="container-fluid">
+        
+<!-- Présentation générale -->
+            <div class="row marginTop align-items-center slide" id="page1" autofocus>
+                <div class="row">
+                    <div class="col-2"></div>
+                    
+                    <div class="col-4 marginHorizontal">
+                        <h1 class="primary-text text-capitalize text-start h1">React Native</h1>
+                        <span class="text-light text-start h2">Learn once, write anywhere.</span>
+                    </div>
+                    
+                    <div class="col-4 marginHorizontal">
+                        <div class="text-center">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg"
+                                 alt="Logo React Native" width="200px" height="200px"
+                            >
+                        </div>
+                    </div>
+                    
+                    <div class="col-2"></div>
+                </div>
+                
+                <div class="row">
+                    <span class="text-light h3 text-center">Veille technologique présentée par Mathieu Brung</span>
+                </div>
+            </div>
+            
+<!-- Naissance -->
+            <div class="row slide" id="page2">
+                <h2 class="primary-text text-start h2"># Né d'un Hackaton chez Facebook en 2013</h2>
+                <ul class="span text-light">
+                    <li>Première release en 2015</li>
+                    <li>Framework Open Source orienté composants</li>
+                    <li>Basé sur React.js</li>
+                    <li>Écrit en JS - donne du code natif pour créer des app Android et iOS</li>
+                </ul>
+            </div>
+            
+<!-- Architecture -->
+            <div class="row slide" id="page3">
+                <h2 class="primary-text text-start h2"># Architecture</h2>
+    
+                <div class="row">
+                    <div class="col">
+                        <span class="span text-light row marginVertical marginHorizontal">Ancienne version</span>
+                        <img src="./assets/oldArchitectureRN.svg" alt="Ancienne architecture RN" />
+                    </div>
+                    <div class="col border-1 border-start border-info" style="height: fit-content">
+                        <span class="span text-light row marginVertical marginHorizontal">Nouvelle version</span>
+                        <img src="./assets/newArchitectureRN.svg" alt="Nouvelle architecture RN" />
+                    </div>
+                </div>
+            </div>
+
+<!-- RN VS Flutter -->
+            <div class="row slide" id="page4">
+                <h2 class="primary-text text-start h2"># React Native VS Flutter</h2>
+                <ul class="span text-light">
+                    <li>Composants VS Widgets</li>
+                    <li>JavaScript VS Dart</li>
+                    <li>Communauté VS Documentation</li>
+                </ul>
+            </div>
+
+    
+<!-- Exemple de code -->
+            <div class="row slide" id="page5">
+                <h2 class="primary-text text-start h2"># Exemple de code</h2>
+                
+                <div class="height">
+                    <iframe loading="lazy"
+                            src="https://snack.expo.dev/embedded/@jonsamp/hello-expo?preview=true&platform=device&iframeId=qlqac1ol7r&theme=dark"
+                            height="100%" width="100%" data-snack-iframe="true" style="display: block;">
+                        
+                    </iframe>
+                </div>
+            </div>
+
+
+            <div class="position-fixed position-absolute top-50 end-0 translate-middle-y
+                 d-flex flex-column justify-content-center align-items-center" style="height: 5vw; width: 5vw;"
+                 data-bs-toggle="tooltip" title="Use arrow keys up and down to navigate"
+            >
+                <img src="./assets/arrowKeyUp.png" width="40px" height="40px" alt="Arrow Key Up" class="marginVertical" />
+                <img src="./assets/arrowKeyDown.png" width="40px" height="40px" alt="Arrow Key Down" class="marginVertical"/>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        document.onkeydown = (event) => {
+            const keyCode = event.key;
+            switch (keyCode) {
+                case 'ArrowUp':
+                    window.scrollBy(0, -window.innerHeight);
+                    break;
+                case 'ArrowDown':
+                    window.scrollBy(0, window.innerHeight);
+                    break;
+                default:
+                    return true;
+            }
+        }
+    </script>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.marginTop {
+    margin-top: 5vh;
+}
+
+.marginBottom {
+    margin-bottom: 48vh;
+}
+
+.marginRight {
+    margin-right: 1%;
+}
+
+.marginHorizontal {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.marginVertical {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.h1 {
+    font-size: 70px;
+}
+
+.h2 {
+    font-size: 25px;
+}
+
+.h3 {
+    font-size: 20px;
+}
+
+.height {
+    height: 80vh;
+}
+
+.span {
+    font-size: 20px;
+}
+
+.primary-text {
+    color: #61DAFB
+}
+
+.primary-bg {
+    background-color: #61DAFB;
+}
+
+body {
+    overflow: hidden;
+}
+
+.slide {
+    min-height: 100vh;
+    max-height: 100vh;
+}
